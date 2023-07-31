@@ -18,7 +18,12 @@ You can install the required packages using pip.
 - Navigate to the directory where thefile is located.Run the program using the following command:
 
 ```bash
-  python product_comparison.py
+  py -m venv env 
+  .\env\Scripts\activate
+```
+```bash
+py -m pip install -r requirements.txt
+py main.py
 ```
 - The program will prompt you to enter the product name you want to compare.After entering the product name, the program will start scraping the product information from multiple ecommerce websites.
 - The scraped information will be displayed in the console, including product name, price, and other relevant details from each website.The program will automatically generate a comparison report and save it to a file named product_comparison_report.txt in the same directory.
